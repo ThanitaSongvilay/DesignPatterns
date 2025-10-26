@@ -1,0 +1,30 @@
+# Build artifacts
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+
+# User-specific files
+*.user
+*.suo
+*.userprefs
+
+# Visual Studio folders
+.vs/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Visual Studio Code workspace
+.vscode/
+
+# Other OS files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.idea/
