@@ -1,4 +1,4 @@
-namespace DesignPatterns;
+namespace DesignPatterns.FactoryMethod.Products.Animals;
 
 public class Cat: IAnmial
 {

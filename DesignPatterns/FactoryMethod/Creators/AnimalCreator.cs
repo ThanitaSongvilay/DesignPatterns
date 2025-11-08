@@ -1,4 +1,4 @@
-namespace DesignPatterns.Creators;
+namespace DesignPatterns.FactoryMethod.Creators;
 
 // The Creator class declares the factory method that is supposed to return 
 // an object of a product class. The Creators subclasses usually provide 

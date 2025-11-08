@@ -1,6 +1,6 @@
-using DesignPatterns.Creators;
+using DesignPatterns.FactoryMethod.Creators;
 
-namespace DesignPatterns;
+namespace DesignPatterns.FactoryMethod;
 
 public class Client
 {

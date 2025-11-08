@@ -1,4 +1,6 @@
-namespace DesignPatterns.Creators;
+using DesignPatterns.FactoryMethod.Products.Animals;
+
+namespace DesignPatterns.FactoryMethod.Creators;
 
 public class ConcreteCat: AnimalCreator
 {

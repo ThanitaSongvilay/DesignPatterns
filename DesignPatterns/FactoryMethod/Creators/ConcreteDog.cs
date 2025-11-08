@@ -1,4 +1,4 @@
-namespace DesignPatterns.Creators;
+namespace DesignPatterns.FactoryMethod.Creators;
 
 public class ConcreteDog: AnimalCreator
 {
