@@ -1,5 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using DesignPatterns;
+using DesignPatterns;using DesignPatterns.AbstractFactory;
+using DesignPatterns.AbstractFactory.Factories;
+using DesignPatterns.AbstractFactory.Products;
 using DesignPatterns.FactoryMethod;
 
-new Client().Main();
+
+
+
+//new FactoryMethodClient().Main();
+new AbstractFactoryClient().Main();
+
+
+
+

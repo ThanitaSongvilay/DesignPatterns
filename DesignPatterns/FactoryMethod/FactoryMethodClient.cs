@@ -2,7 +2,7 @@ using DesignPatterns.FactoryMethod.Creators;
 
 namespace DesignPatterns.FactoryMethod;
 
-public class Client
+public class FactoryMethodClient
 {
     public void Main()
     {
@@ -13,6 +13,11 @@ public class Client
 
         Console.WriteLine("App: Launched with the ConcreteCat.");
         ClientCode(new ConcreteCat());
+        
+        Console.WriteLine("");
+        
+        Console.WriteLine("App: Launched with the ConcretePiegon.");
+        ClientCode(new ConcretePiegon());
     }
 
     // The client code works with an instance of a concrete creator, albeit

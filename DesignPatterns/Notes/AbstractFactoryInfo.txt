@@ -1,0 +1,44 @@
+Use abstract factory when you have different sets of products related to each other. For instance grouped by a concept. 
+Ex. UI elements that belongs to different OS systems. 
+
+Windows OS UI elements look different from Mac OS UI elements. Say that you have a cross-platform application that will render 
+the correct UI elements depending on the OS system. 
+
+1. Declare an abstract factory class that has the task of creating the products. This abstract class has no Idea 
+what concrete types of products it will return. 
+2. Create concrete factory classes that will return specific products. 
+2.a ConcreteWindowsFactory.cs 
+    CreateWindowsButton() 
+    CreateWindowsCheckbox()
+    Return WindowsUI 
+3. Create an abstract product class. 
+    Abstract Button 
+    Abstract Checkbox
+4. Create concrete product classes that implements the abstract interface
+5. The application (Client code) will create an instance of the abstract factory class and with some conditions 
+create the correct UI elements through the abstract factory class. 
+
+
+Calling order: 
+1. Application calls --> 2. Abstract factory class (Interface) --> calls an concrete factory --> returns a concrete product.
+
+Applicability: 
+Use the Abstract Factory when your code needs to work with various families of related products, but you don't want it to depend 
+on the concrete classes of those products -they might be unknown beforehand or you simply want to allow for future extensibility. 
+
+The Abstract Factory provides you with an interface for creating objects from each class of the product family.
+As long as your code creates objects via this interface, you don't have ti worry about creating the wrong variant of a product 
+which doesn't match the products already created by your app. 
+
+When to consider the Abstract Factory: 
+When you have a class with a set of Factory Methods that blur its primary responsibility. 
+
+In a well design program each class is responsible for one thing. When a class deals with multiple 
+product types, it may be worth extracting its factory methods into a stand alone factory class or full blown abstract factory implementation.
+
+Pros: 
+- can be sure that the products you're getting from a factory are compatible with each other
+- avoiding tight coupling between concrete products and client code. 
+- Single Responsibility Principle. You can extract the product creation code into one place,
+making the code easier to support. 
+- Open/closed Principle. You can introduce new variants of products without breaking existing client code. 
